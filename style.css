@@ -1,0 +1,346 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #FF6F61, #F39C12, #8E44AD, #16A085, #2980B9);
+    background-size: 400% 400%;
+    animation: gradientBackground 12s ease infinite;
+    color: #34495E;
+    padding: 0 2rem;
+    animation: fadeIn 1s ease-out;
+}.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.nav-button {
+    background-color: #4f9acc; /* Blue */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 1s ease;
+}
+
+.nav-button:hover {
+    background-color: #000000; /* Teal */
+}
+
+/* Smooth Scrolling */
+
+/* Gradient Background Animation */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50; /* Dark background for the navbar */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E74C3C; /* Hover effect color */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #000000; /* Deep Blue background */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    animation: slideIn 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #000000; /* Slightly lighter blue */
+    color: white;
+    border-radius: 8px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Section Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Sections */
+section {
+    margin-bottom: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Links */
+a {
+    color: #2980B9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E74C3C;
+    text-decoration: underline;
+}
+
+/* Personal Details */
+#personal-details p {
+    margin: 0.5rem 0;
+}
+
+#personal-details a {
+    color: #2980B9;
+}
+
+/* Career Objective */
+#career-objective p {
+    font-style: italic;
+}
+
+/* Education */
+#education p {
+    font-size: 1.1rem;
+}
+
+/* Technical Skills */
+#technical-skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#technical-skills li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Key Projects */
+#key-projects .project {
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#key-projects .project h3 {
+    color: #2C3E50;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+#key-projects .project p {
+    color: #555;
+}
+
+/* Internships */
+#internships h3 {
+    color: #2C3E50;
+    font-size: 1.5rem;
+}
+
+/* Certifications */
+#certifications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#certifications li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+#certifications a {
+    font-weight: bold;
+}
+
+/* Extracurricular Activities */
+#extracurricular-activities ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#extracurricular-activities li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+#extracurricular-activities li strong {
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 0 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 1.8rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section li {
+        font-size: 1rem;
+    }
+
+    #key-projects .project h3 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    section p, section li {
+        font-size: 0.9rem;
+    }
+
+    #key-projects .project h3 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p, section li {
+        font-size: 0.8rem;
+    }
+
+    #key-projects .project h3 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Anil Somankoppa - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Nihal Anil Somankoppa
+        </h1>
+    </header>
+    <h1>
+    <div class="nav-buttons">
+        <a href="#personal-details" class="nav-button">Personal Details</a>
+        <a href="#career-objective" class="nav-button">Career Objective</a>
+        <a href="#education" class="nav-button">Education</a>
+        <a href="#technical-skills" class="nav-button">Skills</a>
+        <a href="#key-projects" class="nav-button">Projects</a>
+        <a href="#internships" class="nav-button">Internships</a>
+        <a href="#certifications" class="nav-button">Certifications</a>
+        <a href="#extracurricular-activities" class="nav-button">Extracurricular</a>
+    </div>
+</h1>
+
+    <section id="personal-details">
+        <h2>Personal Details</h2>
+        <p><strong>Full Name:</strong> Nihal Anil Somankoppa</p>
+        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">nihalsomankoppa@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91-8296964789</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nihal-somankoppa" target="_blank">linkedin.com/in/nihalsomankoppa</a></p>
+    </section>
+
+    <section id="career-objective">
+        <h2>Career Objective</h2>
+        <p>To leverage my analytical skills and expertise in AI, ML, and data visualization to extract insights, drive data-informed decision-making, and contribute to organizational success as a Data Analyst.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>BCA (Bachelor of Computer Applications)</strong>, [KLE Technological University Vidyanagar Hubballi], [Graduation Year-2025]</p>
+        <p><strong>Relevant Coursework:</strong> Big Data Analytics, Machine Learning, Relational Databases (SQL), Statistical Methods, Cyber Security .</p>
+    </section>
+
+    <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, SQL, C ,C++ , Java</li>
+            <li><strong>Tools & Technologies:</strong> Tableau, Power BI, Virustotal , Firewall ,jcrypt tool</li>
+            <li><strong>Statistical Techniques:</strong> Regression Analysis , Classification</li>
+            <li><strong>Data Handling:</strong> Data Cleaning, Visualization</li>
+        </ul>
+    </section>
+
+    <section id="key-projects">
+        <h2>Key Projects</h2>
+        <div class="project">
+            <h3>Augmented Prediction of Employee Anxiety and Depression: An Ensemble Approach</h3>
+            <p><strong>Tools Used:</strong> Python, Scikit-learn</p>
+            <p>Developed an ensemble model to predict mental health issues in the workplace with high accuracy, utilizing advanced machine learning techniques.</p>
+        </div>
+
+        <div class="project">
+            <h3>Advanced Anomaly Detection in Intrusion Detection Systems</h3>
+            <p><strong>Tools Used:</strong> Python, SVM, Neural Networks, Isolation Forest</p>
+            <p>Applied anomaly detection methods to improve threat detection accuracy in security systems.</p>
+        </div>
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <h3>Machine Learning Intern, Pravinya Infotech</h3>
+        <ul>
+            <li>Developed machine learning models for real-world applications, focusing on predictive analytics and data-driven insights.</li>
+            <li>Created automated data pipelines and integrated machine learning models into client projects, improving data processing efficiency.</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Achievements</h2>
+        <ul>
+            <li>
+                <strong>Certified for Research Paper:</strong> 
+                "Augmented Prediction of Employee Anxiety and Depression: An Ensemble Approach" 
+                (doi: <a href="https://doi.org/10.1109/ICCCNT61001.2024.10723923" target="_blank">10.1109/ICCCNT61001.2024.10723923</a>) 
+                by the 15th International IEEE Conference on Computing Communication and Networking Technologies (June 24-28, 2024), IIT - Mandi, Himachal Pradesh, India.
+            </li>
+            <li>
+                <strong>Participated in National Seminar:</strong> 
+                One-day National Seminar on "Technology and Entrepreneurship," organized by the National Forensic Science University, Dharwad.
+            </li>
+        </ul>
+    </section>
+
+    <section id="extracurricular-activities">
+        <h2>Extracurricular Activities</h2>
+        <li>
+            <strong>Certified for Representing KLE Technological University:</strong>
+            <ul>
+                <li>Volleyball (South Zone)</li>
+                <li>Rope Skipping (All India)</li>
+            </ul>
+        </li>
+    </section>
+
+    <footer>
+        <p>© 2024 Nihal Anil Somankoppa. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
